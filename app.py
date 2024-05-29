@@ -14,7 +14,7 @@ db = client['chatgpt']
 collection = db['weather_data']
 
 # Load Kaggle dataset
-historical_data = pd.read_csv('weather_data.csv')
+historical_data = pd.read_csv('weather.csv')
 
 # Store each row of the DataFrame in MongoDB
 def store_historical_data(dataframe):
